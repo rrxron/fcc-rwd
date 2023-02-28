@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Tahoma, sans-serif;
+  background-color: #061010;
+  color: #eeeeee;
+}
+
+a {
+  color: #e1e1e1;
+}
+
+a:hover {
+  color: red;
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#image {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  width: 42%;
+}
+
+#main-container {
+  width: 100%;
+  background-color: #001919;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+#sub-title {
+  margin-bottom: 1.6rem;
+}
+
+#img-div {
+  padding: 0;
+  margin: 0.25rem auto;
+  width: 100%;
+  
+}
+
+#img-caption {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}
+
+#img-caption > span > a {
+  font-size: 0.8rem;
+  width: 100%;
+}
+
+#img-div > #img-caption > span:nth-of-type(1) {
+  margin-bottom: 0.5rem;
+}
+
+#tribute-info {
+  margin: 0.5rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#tribute-info > ul > li {
+  padding: 0.5rem;
+}
+
+#quote-area {
+  margin: 1.5rem 0.5rem;
+}
+
+#source-timeline {
+  margin-bottom: 3rem;
+  font-size: 0.9rem;
+}
+
+#quote-area > div {
+  text-align: center;
+}
+
