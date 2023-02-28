@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --darkest-blue: #050c16;
+  --darker-blue: #0c1a2e;
+  --dark-blue: #1c3c6c;
+  --deep-blue:#214983;
+}
+
+html {
+  font-family: Tahoma, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+}
+
+#navbar {
+  position: sticky;
+  top: 0; 
+  height: 4rem;
+  width: 100vw;
+  background-color: var(--deep-blue);
+  padding: 0 1rem;
+  border-bottom: 2px var(--dark-blue) solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  min-width: 300px;
+}
+
+#navbar a, #social-contacts a {
+  padding: 1rem 2rem;
+  height: 4rem;
+  transition: padding 0.5s ease-in-out 0.1s;
+  color: white;
+}
+
+#navbar a:hover, #social-contacts a:hover {
+  background: var(--dark-blue);
+  padding-top: 0.7rem;
+  padding-bottom: 2rem;
+  transition: padding 0.5s ease-in-out 0.1s;
+  color: var(--darkest-blue);
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#welcome-section {
+  background: radial-gradient(var(--deep-blue), var(--darker-blue), var(--darkest-blue));
+  flex-direction: column;
+}
+
+#welcome-section *  {
+  color: white;
+}
+
+#projects {
+  background:  var(--deep-blue);
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.project-group {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 3.5rem;
+  padding: 3rem;
+  height: 80vh;
+  min-width: 80vh;
+}
+
+.project-tile {
+  display: flex;
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: var(--darker-blue);
+  margin: 10px;
+  width:  30%;
+  height: 50%;
+}
+
+.project-tile a {
+  padding-top: 1rem;
+}
+
+.img-portfolio {
+  width: 100%;
+  max-height: 80%;
+  border-radius: 10px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+#profile-link {
+  position: relative;
+  top: 20%;
+  margin-bottom: 10vh;
+}
+
+#contact {
+  background-color: var(--dark-blue);
+  width: 100vw;
+  height: 100vh;
+}
+
+h1 {
+  color: white;
+}
+
+#contact span {
+  color:#78d837;
+}
+
+#social-contacts {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#contact #social-contacts {
+  padding-top: 2rem;
+  font-size: 2rem;
+}
+
+@media (max-width: 600px) {
+  #navbar {
+    background-color: var(--darker-blue);
+  }
+  #navbar a {
+    font-size: 1rem;
+  }
+}
+
