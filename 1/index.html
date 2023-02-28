@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Service Feedback Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div id="heading-section">
+      <h1 id="title">Service Feedback Form</h1>
+      <p id="description"><em>Kindly provide us with ways to better serve you.</em></p>
+    </div>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">
+          Name <input id="name" type="text" required placeholder="your name">
+        </label>
+        <label for="email" id="email-label">
+          Email <input id="email" type="email" required placeholder="your email">
+        </label>
+        <label for="dropdown">
+          Primary role
+          <select id="dropdown">
+            <option value="developer" checked>DEVELOPER</option>
+            <option value="manager">MANAGER</option>
+            <option value="owner">OWNER</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="number" id="number-label">
+          Service Rating <input id="number" type="number" min="1" max="10" required placeholder="between 1 to 10">
+        </label>
+        <label>
+          Will you recommend us?
+          <label for="recommend-yes" id="recommend-yes-label">
+            <input type="radio" name="recommend-options" value="recommend-yes" id="recommend-yes" checked> Yes
+          </label>
+          <label for="recommend-no">
+            <input type="radio" name="recommend-options" value="recommend-no" id="recommend-no"> No
+          </label>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>
+          Services needing further development:
+          <label for="dev-lasers" id="dev-lasers-label">
+            <input type="checkbox" name="dev-options" value="dev-lasers" id="dev-lasers"> Lasers
+          </label>
+          <label for="dev-firearms">
+            <input type="checkbox" name="dev-options" value="dev-firearms" id="dev-firearms"> Firearms
+          </label>
+          <label for="dev-explosives">
+            <input type="checkbox" name="dev-options" value="dev-explosives" id="dev-explosives"> Explosives
+          </label>
+          <label for="dev-drones">
+            <input type="checkbox" name="dev-options" value="dev-drones" id="dev-drones"> Drones
+          </label>
+          <label for="dev-radar">
+            <input type="checkbox" name="dev-options" value="dev-radar" id="dev-radar"> Radar
+          </label>
+        </label>
+        <label>
+          Comments and Requests:
+          <textarea rows="5"></textarea>
+        </label>
+      </fieldset>
+      <button id="submit" type="submit" value="Submit">Submit</button>
+    </form>
+  </body>
+</html>
+
